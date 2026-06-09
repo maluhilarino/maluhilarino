@@ -1,0 +1,23 @@
+algoritmo "login"
+
+Var
+   senha: caractere
+
+inicio
+
+   senha <- ""
+
+   enquanto senha <> "Belinha" faca
+
+      escreva("Digite a senha: ")
+      leia(senha)
+
+      se senha <> "Belinha" entao
+         escreval("Senha incorreta. Tente novamente.")
+      fimse
+
+   fimenquanto
+
+   escreval("Bem-vindo ao sistema!")
+
+Fimalgoritmo
