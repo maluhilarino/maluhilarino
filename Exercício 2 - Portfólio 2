@@ -1,0 +1,15 @@
+algoritmo "tabuada"
+
+Var
+   numero, contador: inteiro
+
+inicio
+
+   escreva("Digite um número inteiro positivo: ")
+   leia(numero)
+
+   para contador de 1 ate 10 faca
+      escreval(numero, " x ", contador, " = ", numero * contador)
+   fimpara
+
+Fimalgoritmo
