@@ -1,0 +1,51 @@
+algoritmo "calculadora basica"
+
+var
+   num1, num2, resultado: real
+   opcao: inteiro
+
+inicio
+
+   escreva("Digite o primeiro numero: ")
+   leia(num1)
+
+   escreva("Digite o segundo numero: ")
+   leia(num2)
+
+   escreval("")
+   escreval("===== CALCULADORA =====")
+   escreval("1 - Soma")
+   escreval("2 - Subtracao")
+   escreval("3 - Multiplicacao")
+   escreval("4 - Divisao")
+   escreva("Escolha uma opcao: ")
+   leia(opcao)
+
+   escolha opcao
+
+      caso 1
+         resultado <- num1 + num2
+         escreval("Resultado da soma: ", resultado)
+
+      caso 2
+         resultado <- num1 - num2
+         escreval("Resultado da subtracao: ", resultado)
+
+      caso 3
+         resultado <- num1 * num2
+         escreval("Resultado da multiplicacao: ", resultado)
+
+      caso 4
+         se num2 <> 0 entao
+            resultado <- num1 / num2
+            escreval("Resultado da divisao: ", resultado)
+         senao
+            escreval("Erro: nao permitido divisao por 0!")
+         fimse
+
+      outrocaso
+         escreval("Opcao invalida!")
+
+   fimescolha
+
+fimalgoritmo
